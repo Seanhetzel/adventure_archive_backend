@@ -6,3 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 el_mirador = Site.create(name: "el Mirador", description: "Ancient Mayan city")
+mark = User.create(name: "Mark")
