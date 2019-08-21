@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
     def index 
-        sites = Site.all 
-        render json: SiteSerializer.new(sites).to_serialized_json
+        users = User.all 
+        render json: UserSerializer.new(users).to_serialized_json
     end
 end

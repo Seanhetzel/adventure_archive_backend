@@ -1,4 +1,4 @@
-class SiteSerializer < ActiveModel::Serializer
+class UserSerializer < ActiveModel::Serializer
  
   def initialize(user_object)
     @user = user_object
