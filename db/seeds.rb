@@ -16,11 +16,11 @@ mark = User.create(name: "Mark")
 sean = User.create(name: "Sean")
 eva = User.create(name: "Eva")
 
-comment1 = Comment.create(user_id: 0, site_id: 0, content: "There is a secret entence on the East side.")
-comment2 = Comment.create(user_id: 0, site_id: 1, content: "It usually rains there during the summer.")
+comment1 = Comment.create(user_id: 0, site_id: 0, content: "There is a secret entence on the East side.", username: "Mark")
+comment2 = Comment.create(user_id: 0, site_id: 1, content: "It usually rains there during the summer.", username: "Mark")
 
-comment3 = Comment.create(user_id: 1, site_id: 1, content: "That place is scary af.")
-comment4 = Comment.create(user_id: 1, site_id: 2, content: "Does anyone know how to get there?")
+comment3 = Comment.create(user_id: 1, site_id: 1, content: "That place is scary af.", username: "Sean")
+comment4 = Comment.create(user_id: 1, site_id: 2, content: "Does anyone know how to get there?", username: "Sean")
 
-comment5 = Comment.create(user_id: 2, site_id: 0, content: "WOW!! OMG THAT LOOKS SO BEAUTIFUL!")
-comment6 = Comment.create(user_id: 2, site_id: 2, content: "OOOOOO I WANNA GO THERE!")
+comment5 = Comment.create(user_id: 2, site_id: 0, content: "WOW!! OMG THAT LOOKS SO BEAUTIFUL!", username: "Eva")
+comment6 = Comment.create(user_id: 2, site_id: 2, content: "OOOOOO I WANNA GO THERE!", username: "Eva")
