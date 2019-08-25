@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 el_mirador = Site.create(name: "el Mirador", description: "El Mirador flourished from about the 6th century BCE to the 1st century CE, reaching its height from the 3rd century BCE. Then it experienced a hiatus of construction and perhaps abandonment for generations,[5] followed by re-occupation and further construction in the Late Classic era, and a final abandonment about the end of the 9th century. The civic center of the site covers some 10 square miles (26 km2) with several thousand structures, including monumental architecture from 10 to 72 meters high.
 One of the key elements for this tremendous rise in human population was the many bajos, seasonal swamps, in the region. Tropical-forest soil contains hardly any nutrients and most of the nutrients present get washed away by rain. Yet the Maya developed a system that was highly productive. In the Mirador basin, the swamps provided the solution. By importing mud from the swamps by the thousands of tonnes, the Maya created mud-covered terraces ready for agriculture. By adding lime to the soil, they elevated the pH, making it suitable for a variety of crops: corn, squash, beans, cacao, cotton and palm. When the ground was depleted of nutrients, adding another layer of mud reinvigorates the fields.[6]
 There is a number of triadic structures (around 35 structures),[7] consisting of large artificial platforms topped with a set of 3 summit pyramids. The most notable of such structures are three huge complexes; one is nicknamed El Tigre, with height 55 metres (180 ft); the other is called La Danta (or Danta) temple. The La Danta temple measures approximately 72 metres (236 ft) tall from the forest floor,[8] and considering its total volume (2,800,000 cubic meters) is one of the largest pyramids in the world.[9] When the large man-made platform that the temple is built upon (some 180,000 square meters) is included in calculations, La Danta is considered by some archeologists to be one of the most massive ancient structures in the world.[10] Also the Los Monos complex is very large (48 meters high) although not as well known. Most of the structures were originally faced with cut stone which was then decorated with large stucco masks depicting the deities of Maya mythology. According to Carlos Morales-Aguilar, a Guatemalan archaeologist from Pantheon-Sorbonne University, the city appears to have been planned from its foundation, as extraordinary alignments have been found between the architectural groups and main temples, which were possibly related to solar alignments.[11] The study reflects an importance of urban planning and sacred spaces since the first settlers.")
@@ -20,3 +13,14 @@ The pyramid remained the tallest man-made structure in the world for over 3,800 
 The completed design dimensions, as suggested by Petries survey and subsequent studies, are estimated to have originally been 280 Egyptian Royal cubits high by 440 cubits long at each of the four sides of its base. The ratio of the perimeter to height of 1760/280 Egyptian Royal cubits equates to 2π to an accuracy of better than 0.05 percent (corresponding to the well-known approximation of π as 22/7). Some Egyptologists consider this to have been the result of deliberate design proportion. Verner wrote, We can conclude that although the ancient Egyptians could not precisely define the value of π, in practice they used it.[12] Petrie concluded: but these relations of areas and of circular ratio are so systematic that we should grant that they were in the builders design.[13] Others have argued that the ancient Egyptians had no concept of pi and would not have thought to encode it in their monuments. They believe that the observed pyramid slope may be based on a simple seked slope choice alone, with no regard to the overall size and proportions of the finished building.[14] In 2013, rolls of papyrus called the Diary of Merer were discovered written by some of those who delivered limestone and other construction materials from Tora to Giza.")
 
 mark = User.create(name: "Mark")
+sean = User.create(name: "Sean")
+eva = User.create(name: "Eva")
+
+comment1 = Comment.create(user_id: 0, site_id: 0, content: "There is a secret entence on the East side.")
+comment2 = Comment.create(user_id: 0, site_id: 1, content: "It usually rains there during the summer.")
+
+comment3 = Comment.create(user_id: 1, site_id: 1, content: "That place is scary af.")
+comment4 = Comment.create(user_id: 1, site_id: 2, content: "Does anyone know how to get there?")
+
+comment5 = Comment.create(user_id: 2, site_id: 0, content: "WOW!! OMG THAT LOOKS SO BEAUTIFUL!")
+comment6 = Comment.create(user_id: 2, site_id: 2, content: "OOOOOO I WANNA GO THERE!")
